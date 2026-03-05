@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FitStreak Profile</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+
+<div class="phone">
+
+  <!-- HEADER -->
+  <div class="header">
+    <a href="settings.html" class="back">
+      <i class="fa-solid fa-arrow-left"></i>
+    </a>
+    <div class="logo">
+      <i class="fa-solid fa-person-running"></i>
+      <span>Fit<span class="dark">Streak</span></span>
+    </div>
+  </div>
+
+  <h2 class="page-title">Profile</h2>
+
+  <!-- IMAGE -->
+  <div class="avatar-box">
+    <div class="avatar">
+      <img id="profileImg">
+    </div>
+
+    <div class="camera-btn" onclick="toggleMenu()">
+      <i class="fa-solid fa-camera"></i>
+    </div>
+
+    <div class="image-menu" id="imageMenu">
+      <button onclick="pickImage()">Change Photo</button>
+      <button class="danger" onclick="removeImage()">Remove Photo</button>
+    </div>
+
+    <input type="file" id="imgInput" accept="image/*" hidden>
+  </div>
+
+  <!-- NAME -->
+  <div class="field">
+    <input id="name" type="text" placeholder="Name">
+    <i class="fa-solid fa-pen" onclick="focusInput('name')"></i>
+  </div>
+
+  <!-- EMAIL -->
+  <div class="field">
+    <input id="email" type="email" placeholder="Email (@gmail.com)">
+    <i class="fa-solid fa-pen" onclick="focusInput('email')"></i>
+  </div>
+
+  <!-- DATE INPUT ONLY -->
+  <div class="field">
+    <input id="dob" type="date">
+  </div>
+
+  <button class="save-btn" onclick="saveProfile()">Save</button>
+
+</div>
+
+<script src="profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Poppins,sans-serif;
+}
+
+body{
+  background:#eceef3;
+  display:flex;
+  justify-content:center;
+  padding:20px;
+}
+
+.phone{
+  width:390px;
+  height:740px;
+  background:#fff;
+  border-radius:30px;
+  padding:15px;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+}
+
+/* HEADER */
+.header{text-align:center;font-size:22px}
+.header i{color:#ff7a18;margin-right:6px}
+.fit{color:#ff7a18}
+.streak{color:#000}
+
+/* TITLE */
+.title{margin:15px 0;font-weight:600}
+
+/* ITEM */
+.item{
+  display:flex;
+  align-items:center;
+  background:#f5f6fa;
+  padding:14px;
+  border-radius:14px;
+  margin-bottom:10px;
+}
+
+.item span{flex:1;margin-left:10px}
+.arrow{color:#aaa}
+
+.left{
+  width:38px;height:38px;
+  border-radius:10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+}
+
+.orange{background:#fb923c}
+.yellow{background:#facc15}
+.blue{background:#3b82f6}
+.sky{background:#38bdf8}
+.purple{background:#8b5cf6}
+.green{background:#34d399}
+
+/* SWITCH */
+.switch{width:46px;height:24px;position:relative}
+.switch input{display:none}
+.slider{
+  position:absolute;
+  inset:0;
+  background:#ccc;
+  border-radius:20px;
+}
+.slider:before{
+  content:"";
+  width:20px;height:20px;
+  background:#fff;
+  border-radius:50%;
+  position:absolute;
+  top:2px;left:2px;
+  transition:.3s;
+}
+input:checked + .slider{background:#ff7a18}
+input:checked + .slider:before{transform:translateX(22px)}
+
+/* LOGOUT */
+.logout{
+  margin-top:auto;
+  margin-bottom:70px;
+  padding:14px;
+  border:none;
+  border-radius:30px;
+  background:linear-gradient(to right,#ff9800,#ff3d00);
+  color:#fff;
+  font-size:16px;
+}
+
+/* LOGOUT CONFIRM */
+.overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,.4);
+  display:none;
+  align-items:center;
+  justify-content:center;
+}
+
+.confirm-box{
+  background:#fff;
+  padding:20px;
+  border-radius:20px;
+  text-align:center;
+  width:80%;
+}
+
+.confirm-actions{
+  display:flex;
+  justify-content:space-between;
+  margin-top:15px;
+}
+
+.confirm-actions button{
+  width:48%;
+  padding:10px;
+  border:none;
+  border-radius:20px;
+}
+
+.cancel{background:#e5e7eb}
+.confirm{background:#ff3d00;color:#fff}
+
+/* BOTTOM NAV */
+.bottom-nav{
+  position:absolute;
+  bottom:10px;
+  left:0;
+  width:100%;
+  display:flex;
+  justify-content:space-around;
+  text-align:center;
+}
+
+.bottom-nav a,
+.bottom-nav span{
+  text-decoration:none;
+  color:#888;
+}
+
+.bottom-nav .active{color:#ff7a18}
+
+/* DARK MODE */
+.dark{
+  background:#0f172a;
+  color:#fff;
+}
+
+.dark .item{background:#1e293b}
+.dark .streak{color:#fff}
+.dark .arrow{color:#94a3b8}
+.dark .confirm-box{background:#1e293b}

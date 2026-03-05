@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FitStreak Progress</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="progress.css">
+</head>
+
+<body>
+<div class="phone">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h2>
+      <i class="fa-solid fa-person-running"></i>
+      <span class="fit">Fit</span><span class="streak">Streak</span>
+    </h2>
+  </div>
+
+  <!-- MONTH -->
+  <div class="month" id="monthText"></div>
+
+  <!-- CALENDAR -->
+  <div class="calendar" id="calendar"></div>
+
+  <!-- INFO BOX -->
+  <div class="info-box">
+    <h4 id="infoTitle">Overall Records</h4>
+    <div class="info-content" id="infoContent">
+      <p>Total Goals: <b id="totalGoals">0</b></p>
+      <p>Completed: <b id="doneGoals">0</b></p>
+      <p>Completion: <b id="percentGoals">0%</b></p>
+    </div>
+  </div>
+
+  <!-- GRAPH -->
+  <div class="graph">
+    <h4>Weekly Completion</h4>
+    <div class="bars" id="bars"></div>
+  </div>
+
+  <!-- BOTTOM NAV -->
+  <div class="bottom-nav">
+    <a href="home.html">🏠<br>Home</a>
+    <span class="active">📊<br>Progress</span>
+    <a href="reminder.html">⏰<br>Reminder</a>
+    <a href="settings.html">⚙️<br>Settings</a>
+  </div>
+
+</div>
+
+<script src="progress.js"></script>
+</body>
+</html>
