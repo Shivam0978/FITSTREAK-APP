@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FitStreak Reminder</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="reminder.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+<div class="phone">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h2>
+      <i class="fa-solid fa-person-running"></i>
+      <span class="fit">Fit</span><span class="streak">Streak</span>
+    </h2>
+  </div>
+
+  <h3 class="title">Reminders</h3>
+
+  <!-- SCROLL AREA -->
+  <div class="content">
+    <div class="reminder-list" id="reminderList"></div>
+  </div>
+
+  <!-- ADD REMINDER FIXED AREA -->
+  <div class="add-area">
+    <button class="add-btn" onclick="openForm()">+ Add Reminder</button>
+  </div>
+
+  <!-- ADD / EDIT FORM -->
+  <div class="form-box" id="formBox">
+    <div class="form-header">
+      <span>Add Reminder</span>
+      <i class="fa-solid fa-xmark" onclick="closeForm()"></i>
+    </div>
+
+    <input type="text" id="goalInput" placeholder="Goal name">
+    <input type="time" id="timeInput">
+    <button onclick="saveReminder()">Save</button>
+  </div>
+
+  <!-- BOTTOM NAV FIXED -->
+  <div class="bottom-nav">
+    <a href="home.html">🏠<br>Home</a>
+    <a href="progress.html">📊<br>Progress</a>
+    <span class="active">⏰<br>Reminder</span>
+    <a href="settings.html">⚙️<br>Settings</a>
+  </div>
+
+</div>
+
+<script src="reminder.js"></script>
+
+</body>
+</html>

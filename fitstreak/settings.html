@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FitStreak Settings</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="settings.css">
+</head>
+
+<body>
+<div class="phone" id="phone">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h2>
+      <i class="fa-solid fa-person-running"></i>
+      <span class="fit">Fit</span><span class="streak">Streak</span>
+    </h2>
+  </div>
+
+  <h3 class="title">Settings</h3>
+
+  <!-- ITEMS -->
+  <div class="item" onclick="location.href='profile.html'">
+    <div class="left orange"><i class="fa-solid fa-user"></i></div>
+    <span>Profile</span>
+    <i class="fa-solid fa-chevron-right arrow"></i>
+  </div>
+
+  <div class="item" onclick="location.href='new-password.html'">
+    <div class="left yellow"><i class="fa-solid fa-lock"></i></div>
+    <span>Password</span>
+    <i class="fa-solid fa-chevron-right arrow"></i>
+  </div>
+
+  <div class="item">
+    <div class="left blue"><i class="fa-solid fa-bell"></i></div>
+    <span>Workout Reminders</span>
+    <label class="switch">
+      <input type="checkbox" checked>
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="item">
+    <div class="left sky"><i class="fa-solid fa-calendar"></i></div>
+    <span>Weekly Summary</span>
+    <label class="switch">
+      <input type="checkbox" checked>
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <!-- DARK MODE -->
+  <div class="item">
+    <div class="left purple"><i class="fa-solid fa-moon"></i></div>
+    <span>Dark Mode</span>
+    <label class="switch">
+      <input type="checkbox" id="darkToggle">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="item" onclick="location.href='support.html'">
+    <div class="left green"><i class="fa-solid fa-question"></i></div>
+    <span>Support</span>
+    <i class="fa-solid fa-chevron-right arrow"></i>
+  </div>
+
+  <!-- LOGOUT -->
+  <button class="logout" onclick="openLogout()">Log Out</button>
+
+  <!-- LOGOUT CONFIRM -->
+  <div class="overlay" id="logoutBox">
+    <div class="confirm-box">
+      <h3>Log out?</h3>
+      <p>Are you sure you want to logout?</p>
+      <div class="confirm-actions">
+        <button class="cancel" onclick="closeLogout()">Cancel</button>
+        <button class="confirm" onclick="doLogout()">Logout</button>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- BOTTOM NAV -->
+  <div class="bottom-nav">
+    <a href="home.html">🏠<br>Home</a>
+    <a href="progress.html">📊<br>Progress</a>
+    <a href="reminder.html">⏰<br>Reminder</a>
+    <span class="active">⚙️<br>Settings</span>
+  </div>
+
+</div>
+
+<script src="settings.js"></script>
+
+</body>
+</html>
